@@ -640,7 +640,7 @@ func (r *HelmRelease) Schema(ctx context.Context, req resource.SchemaRequest, re
 
 func (r *HelmRelease) IdentitySchema(ctx context.Context, req resource.IdentitySchemaRequest, resp *resource.IdentitySchemaResponse) {
 	resp.IdentitySchema = identityschema.Schema{
-		Version: 1,
+		Version: 0,
 		Attributes: map[string]identityschema.Attribute{
 			"namespace": identityschema.StringAttribute{
 				// use "default" if not specified
